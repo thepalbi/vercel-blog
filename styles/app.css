@@ -36,7 +36,7 @@
 }
 
 .markdown {
-    @apply w-full leading-normal text-main;
+    @apply w-full leading-normal text-main font-light;
 }
 
 .markdown > * + * {
