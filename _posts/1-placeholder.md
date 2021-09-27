@@ -4,7 +4,7 @@ title: "Placeholder"
 excerpt:
     "This is a placeholder post to remember how to use front-matter."
 # coverImage: "/assets/post/post.png"
-date: "Sun 26th Sept, 2021"
+date: "Sun, 26 Sept 2021"
 author:
     name: Pablo
     twitter: "https://twitter.com/pablolbalbi"
