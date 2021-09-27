@@ -8,6 +8,10 @@ import PostCoverImage from "../../components/PostCoverImage";
 import metaData from "../../lib/data";
 
 export default function Post({ post }) {
+    let coverImage;
+    if (post.coverImage) {
+        coverImage = <PostCoverImage image={post.coverImage} />;
+    }
     return (
         <Home>
             <MetaHead
@@ -20,7 +24,7 @@ export default function Post({ post }) {
                 <div className="flex flex-col my-6 space-y-3">
                     <PostTitle title={post.title} />
                     <PostDetails author={post.author} date={post.date} />
-                    <PostCoverImage image={post.coverImage} />
+                    {coverImage}
                     <PostContent content={post.content} />
                 </div>
             </article>
