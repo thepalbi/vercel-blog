@@ -5,6 +5,7 @@ import { getAllPosts } from "../lib/api";
 import HeroTitle from "../components/HeroTitle";
 import HeroExcerpt from "../components/HeroExcerpt";
 import metaData from "../lib/data";
+import { format, compareDesc } from "date-fns";
 
 export default function Index({ allPosts }) {
     const posts = allPosts.map((post, key) => (
@@ -39,6 +40,8 @@ export async function getStaticProps() {
         "author",
         "excerpt",
     ]);
+
+    allPosts.sort((post1, post2) => compareDesc(new Date(post1.date), new Date(post2.date)));
 
     return {
         props: { allPosts },

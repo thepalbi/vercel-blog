@@ -3,7 +3,7 @@ tag: "code"
 title: "Discovering Mocha tests on VS Code"
 excerpt:
     "Setting up Mocha tests discovery, in VSCode, with TypeScript."
-date: "Sat, 2 Oct 2021"
+date: "10-02-2021"
 author:
     name: Pablo
     twitter: "https://twitter.com/pablolbalbi"

@@ -3,7 +3,7 @@ tag: "travel"
 title: "On Hostels"
 excerpt:
     "Experimental writing after a terrible hostel experience."
-date: "Tue, 25 Feb 2020"
+date: "02-25-2020"
 author:
     name: Pablo
     twitter: "https://twitter.com/pablolbalbi"

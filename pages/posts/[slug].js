@@ -6,12 +6,14 @@ import PostTitle from "../../components/PostTitle";
 import PostDetails from "../../components/PostDetails";
 import PostCoverImage from "../../components/PostCoverImage";
 import metaData from "../../lib/data";
+import { prettyPrintDate } from "../../lib/date";
 
 export default function Post({ post }) {
     let coverImage;
     if (post.coverImage) {
         coverImage = <PostCoverImage image={post.coverImage} />;
     }
+    let formattedDate = prettyPrintDate(post.date);
     return (
         <Home>
             <MetaHead
@@ -23,7 +25,7 @@ export default function Post({ post }) {
             <article className="flex flex-col max-w-5xl px-2 mx-auto space-y-4">
                 <div className="flex flex-col my-6 space-y-3">
                     <PostTitle title={post.title} />
-                    <PostDetails author={post.author} date={post.date} />
+                    <PostDetails author={post.author} date={formattedDate} />
                     {coverImage}
                     <PostContent content={post.content} />
                 </div>
