@@ -3,7 +3,7 @@ tag: "interviews"
 title: "Interview notes: [DB]FS, your new best friend"
 excerpt:
     "First edition on Interview Notes, featuring tree traversals."
-date: "04-07-2020"
+date: "2020-04-07"
 author:
     name: Pablo
     twitter: "https://twitter.com/pablolbalbi"

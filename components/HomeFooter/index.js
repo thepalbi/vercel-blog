@@ -26,7 +26,7 @@ function LinkedIcon({href, iconName}) {
             href={href}
             target="_blank"
         >
-            <i class={`fab ${iconName} text-lg mx-1`}></i>
+            <i className={`fab ${iconName} text-lg mx-1`}></i>
         </a>
     )
 }
