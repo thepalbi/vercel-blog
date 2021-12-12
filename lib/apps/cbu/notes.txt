@@ -1,0 +1,7 @@
+let rows = document.querySelectorAll("tbody tr");
+let obj = {};
+rows.forEach(row => {
+    let tds = row.querySelectorAll("td");
+    obj.entities.push({id: parseInt(tds[0].innerText), name: tds[1].innerText})
+});
+JSON.stringify(obj);
