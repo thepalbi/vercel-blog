@@ -22,6 +22,9 @@ export default function HomeHeader({ theme, handleThemeToggle }) {
                     <Link className="capitalize hover:decoration-4" href="/apps/cbu">
                         <a>CBU Splitter</a>
                     </Link>
+                    <Link className="capitalize hover:decoration-4" href="https://recetario-thepalbi.vercel.app/">
+                        <a>Recetario</a>
+                    </Link>
                 </div>
                 <div
                     className="w-8 h-8 p-2 rounded-md cursor-pointer bg-code-block"
