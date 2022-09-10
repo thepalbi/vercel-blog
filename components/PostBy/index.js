@@ -3,11 +3,11 @@ export default function PostBy({ author }) {
         <div className="flex flex-row space-x-2">
             <span>By</span>
             <a
-                href={author.twitter}
+                href="https://twitter.com/thepalbi"
                 target="_blank"
                 className="font-bold hover:underline"
             >
-                {author.name}
+                Pablo
             </a>
         </div>
     );

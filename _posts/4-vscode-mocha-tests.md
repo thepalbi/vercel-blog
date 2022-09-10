@@ -1,15 +1,11 @@
 ---
-tag: "code"
-title: "Discovering Mocha tests on VS Code"
-excerpt:
-    "Setting up Mocha tests discovery, in VSCode, with TypeScript."
-date: "2021-10-02"
-author:
-    name: Pablo
-    twitter: "https://twitter.com/pablolbalbi"
-    picture: ""
+tag: code
+title: Discovering Mocha tests on VS Code
+excerpt: Setting up Mocha tests discovery, in VSCode, with TypeScript.
+date: 2021-10-02
 ogImage:
-    url: "/assets/meta/blogSimple.jpg"
+  url: /assets/meta/blogSimple.jpg
+lastmod: 2022-09-10T05:03:13.187Z
 ---
 
 While working on a TypeScript project and doing TDD, obviously, I needed to debug a test. Sounds easy right? The thing is I wanted to used VSCode's debugger, since it came in handy some times in the past. 

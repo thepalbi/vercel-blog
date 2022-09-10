@@ -1,12 +1,12 @@
 ---
-title: Notas de escalada
-description: ""
+title: Notas de escalada - Primer mes
+description: Recolección de notas y aprendizajes de escalada durante los primeros meses.
 date: 2022-09-09T23:09:33.123Z
 preview: ""
 draft: ""
 tags: ""
 categories: ""
-lastmod: 2022-09-10T04:34:25.160Z
+lastmod: 2022-09-10T05:01:28.110Z
 ---
 
 <p>Manu me pasó una <a href="https://www.youtube.com/playlist?list=PL82AsR7DcU5fhL5pVNuR9VUI_RDQZdnPM">playlist de escalada</a>. Entre los videos que encontré había dos que me llamaron mucho la atención para ahora (~3 semanas in).</p>

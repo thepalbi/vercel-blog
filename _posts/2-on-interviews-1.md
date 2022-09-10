@@ -1,15 +1,11 @@
 ---
-tag: "interviews"
+tag: interviews
 title: "Interview notes: [DB]FS, your new best friend"
-excerpt:
-    "First edition on Interview Notes, featuring tree traversals."
-date: "2020-04-07"
-author:
-    name: Pablo
-    twitter: "https://twitter.com/pablolbalbi"
-    picture: ""
+excerpt: First edition on Interview Notes, featuring tree traversals.
+date: 2020-04-07
 ogImage:
-    url: "/assets/meta/blogSimple.jpg"
+  url: /assets/meta/blogSimple.jpg
+lastmod: 2022-09-10T05:03:25.556Z
 ---
 I've being part of interviews for a while now. Just from the interviewee side to clarify, still missing the other. The thing is that after some of them I began to realize that interviewing, read here the ability to perform during one of such, is a skill one can practice. This post will be some kind of compilation of notes I've taken while practicing, but just concerning the technical challenges in them.
 

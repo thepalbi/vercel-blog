@@ -1,15 +1,11 @@
 ---
-tag: "travel"
-title: "On Hostels"
-excerpt:
-    "Experimental writing after a terrible hostel experience."
-date: "2020-02-25"
-author:
-    name: Pablo
-    twitter: "https://twitter.com/pablolbalbi"
-    picture: ""
+tag: travel
+title: On Hostels
+excerpt: Experimental writing after a terrible hostel experience.
+date: 2020-02-25
 ogImage:
-    url: "/assets/meta/blogSimple.jpg"
+  url: /assets/meta/blogSimple.jpg
+lastmod: 2022-09-10T05:03:06.142Z
 ---
 I've visited New York City (NYC from now on) for the first time last March. It was crazy for two reasons: First, it was the first big city I visited outside Latin America; and second, it strangely felt like home. Maybe because of the chaos, the dollar pizza, the never-ending nightlife (I know, very cliche from me to mention that), the 🐀, the 24/7 subways, etc.
 

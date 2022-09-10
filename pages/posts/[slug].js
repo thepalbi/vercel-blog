@@ -9,65 +9,66 @@ import metaData from "../../lib/data";
 import { prettyPrintDate } from "../../lib/date";
 
 export default function Post({ post }) {
-    let coverImage;
-    if (post.coverImage) {
-        coverImage = <PostCoverImage image={post.coverImage} />;
-    }
-    let formattedDate = prettyPrintDate(post.date);
-    return (
-        <Home>
-            <MetaHead
-                title={metaData.title}
-                description={metaData.description}
-                url={metaData.url}
-                image={metaData.image}
-            />
-            <article className="flex flex-col max-w-5xl px-2 mx-auto space-y-4">
-                <div className="flex flex-col my-6 space-y-3">
-                    <PostTitle title={post.title} />
-                    <PostDetails author={post.author} date={formattedDate} />
-                    {coverImage}
-                    <PostContent content={post.content} />
-                </div>
-            </article>
-        </Home>
-    );
+  let coverImage;
+  if (post.coverImage) {
+    coverImage = <PostCoverImage image={post.coverImage} />;
+  }
+  let formattedDate = prettyPrintDate(post.date);
+  return (
+    <Home>
+      <MetaHead
+        title={metaData.title}
+        description={metaData.description}
+        url={metaData.url}
+        image={metaData.image}
+      />
+      <article className="flex flex-col max-w-5xl px-2 mx-auto space-y-4">
+        <div className="flex flex-col my-6 space-y-3">
+          <PostTitle title={post.title} />
+          <PostDetails author={post.author} date={formattedDate} />
+          {coverImage}
+          <PostContent content={post.content} />
+        </div>
+      </article>
+    </Home>
+  );
 }
 
 export async function getStaticProps({ params }) {
-    const post = getPostBySlug(params.slug, [
-        "tag",
-        "title",
-        "date",
-        "slug",
-        "author",
-        "content",
-        "ogImage",
-        "coverImage",
-    ]);
-    const content = post.content || "";
+  const slug = params.slug.endsWith('.md') ? params.slug : params.slug + '.md';
+  const post = getPostBySlug(slug, [
+    "tag",
+    "title",
+    "date",
+    "slug",
+    "author",
+    "content",
+    "ogImage",
+    "coverImage",
+  ]);
+  const content = post.content || "";
 
-    return {
-        props: {
-            post: {
-                ...post,
-                content,
-            },
-        },
-    };
+  return {
+    props: {
+      post: {
+        ...post,
+        content,
+      },
+    },
+  };
 }
 
 export async function getStaticPaths() {
-    const posts = getAllPosts(["slug"]);
+  const posts = getAllPosts(["slug"]);
 
-    return {
-        paths: posts.map((post) => {
-            return {
-                params: {
-                    slug: post.slug,
-                },
-            };
-        }),
-        fallback: false,
-    };
+  return {
+    paths: posts.map((post) => {
+      return {
+        params: {
+          slug: post.slug,
+        },
+      };
+    }),
+    fallback: false,
+  };
 }
