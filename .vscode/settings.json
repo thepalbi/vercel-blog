@@ -7,5 +7,6 @@
     ],
     "frontMatter.taxonomy.tags": [],
     "frontMatter.taxonomy.categories": [],
-    "frontMatter.content.autoUpdateDate": true
+    "frontMatter.content.autoUpdateDate": true,
+    "frontMatter.dashboard.openOnStart": true
 }
