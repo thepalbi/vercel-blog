@@ -19,7 +19,7 @@ export default function MetaHead({ title, description, url, image }) {
             <meta property="twitter:description" content={description} />
             <meta property="twitter:image" content={image} />
 
-            <script src="https://kit.fontawesome.com/32e78f6fba.js" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/32e78f6fba.js" crossOrigin="anonymous"></script>
         </Head>
     );
 }

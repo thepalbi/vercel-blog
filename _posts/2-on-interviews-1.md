@@ -3,9 +3,7 @@ tag: interviews
 title: "Interview notes: [DB]FS, your new best friend"
 excerpt: First edition on Interview Notes, featuring tree traversals.
 date: 2020-04-07
-ogImage:
-  url: /assets/meta/blogSimple.jpg
-lastmod: 2022-09-10T05:03:25.556Z
+lastmod: 2022-09-11T00:26:35.524Z
 ---
 I've being part of interviews for a while now. Just from the interviewee side to clarify, still missing the other. The thing is that after some of them I began to realize that interviewing, read here the ability to perform during one of such, is a skill one can practice. This post will be some kind of compilation of notes I've taken while practicing, but just concerning the technical challenges in them.
 
@@ -16,9 +14,9 @@ Just for giving some background, this will have things such as patterns discover
 Let's say you start with a problem `P`, and you don't have a clear solution in mind. Here are some things I found useful, both in interviews and life to either solve the problem, improve the solution a bit, or at least get ideas flowing:
 
 - **Consider the brute-force solution**. Some times you will think something like: _Hey, no way I'm doing the brute-force. It's a horrible exponential monstrosity_. The point isn't that this is our last call, but to first get you thinking about how the problem is solved, and while doing so you could discover some specific property of the problem that can be leveraged to obtain a more performant solution.
-- In the case the brute-force solution cost is over \[katex\]O(n^2)\[/katex\], you should consider if **first sorting the input**, which has a cost of \[katex\]O(n \* log(n))\[/katex\], helps in solving the problem. Keep in mind that for this to be worth, the cost of `sort + solve_sorted` has to be less than the `brute force`.
+- In the case the brute-force solution cost is over $O(n^2)$, you should consider if **first sorting the input**, which has a cost of $O(n log(n))$, helps in solving the problem. Keep in mind that for this to be worth, the cost of `sort + solve_sorted` has to be less than the `brute force`.
 - If the problem consists somehow of _finding an element, or a bunch of elements that verify some property_ objective, and the container of the elements is sorted, consider using a **binary search**. This might not work for finding the exact solution, but at least you can narrow the collection in which you are looking into.
-- Always consider that `hashmap`(read here Python's [dictionary](\"https://docs.python.org/3/tutorial/datastructures.html?highlight=dictionary#dictionaries\"), Java's [HashMap](\"https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html\"), Ruby hashes, etc.) operations for getting and putting values are \[katex\]O(1)\[/katex\].
+- Always consider that `hashmap`(read here Python's [dictionary](\"https://docs.python.org/3/tutorial/datastructures.html?highlight=dictionary#dictionaries\"), Java's [HashMap](\"https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html\"), Ruby hashes, etc.) operations for getting and putting values are $O(1)$.
 
 ### Depth/Breath First Search: Your all-time good friend
 
