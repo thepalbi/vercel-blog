@@ -6,8 +6,21 @@ preview: ""
 draft: ""
 tags: ""
 categories: ""
-lastmod: 2022-09-10T05:01:28.110Z
+lastmod: 2022-09-15T18:13:13.411Z
 ---
+
+## 15-09-2022
+
+**Ejercicios para prácticar footwork**
+- 10 minutos durante el calentamiento practicando footwork.
+- Elegir problemas fáciles.
+- Al posicionar los pies, mantener contacto visual.
+- Hacer todos los movimientos muy lentamente.
+- Relajar el grip de las manos y los brazos, para sentir más el peso en los pies.
+
+[Fuente](https://www.youtube.com/watch?v=6IUF1HrYUJ8)
+
+## 10-09-2022
 
 <p>Manu me pasó una <a href="https://www.youtube.com/playlist?list=PL82AsR7DcU5fhL5pVNuR9VUI_RDQZdnPM">playlist de escalada</a>. Entre los videos que encontré había dos que me llamaron mucho la atención para ahora (~3 semanas in).</p>
 
