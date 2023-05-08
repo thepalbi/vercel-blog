@@ -17,6 +17,7 @@ export default function Nav() {
               <Link href="/">Pablog</Link>
             </h3>
           </li>
+          <li><Link href="https://tesisdepalbi.deno.dev/">Tesis</Link></li>
           <li><Link href="https://recetario-thepalbi.vercel.app/">Recetario</Link></li>
           <li><Link href="/apps/cbu">CBU Splitter</Link></li>
         </ul>
@@ -33,6 +34,7 @@ const styles = {
       margin-top: 0;
       margin-left: 0;
       padding-left: 0;
+      overflow: hidden;
     }
     li {
       font-weight: 350;
@@ -40,6 +42,14 @@ const styles = {
     }
     li + li {
       margin-left: 15px;
+    }
+    @media (max-width: 400px) {
+      li {
+        display: block;
+      }
+      li + li {
+        margin-left: 0;
+      }
     }
     a {
       text-decoration: none;
